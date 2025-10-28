@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Super-Heróis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria de Super-Heróis</h1>
+        <div class="filters">
+            <div class="search-bar">
+                <input type="search" id="searchInput" placeholder="Buscar por nome...">
+            </div>
+            <div class="filter-group">
+                <select id="publisherFilter">
+                    <option value="">Todas as editoras</option>
+                </select>
+                <select id="alignmentFilter">
+                    <option value="">Todos os alinhamentos</option>
+                    <option value="good">Heróis</option>
+                    <option value="bad">Vilões</option>
+                    <option value="neutral">Neutro</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="results-info" id="resultsInfo"></div>
+        <div id="content"></div>
+        <div class="pagination" id="pagination"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
